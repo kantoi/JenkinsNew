@@ -45,15 +45,13 @@ public class UITest {
 
         driver.manage().window().maximize();
         driver.get("https://frontelease-colemanite-co31.antikode.dev/announcement/");
-<<<<<<< OURS
-        Assert.assertTrue(driver.getTitle().contains("Compass"), "Title  match");
-=======
+
         Assert.assertTrue(driver.getTitle().contains("Compass"), "Title Match");
->>>>>>> THEIRS
+
         driver.quit();
        
     }
-    @Test(enabled=true)
+   
     
 
    @Test(enabled=false)
