@@ -1,5 +1,7 @@
 package mavenforjenkins;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -13,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class UITest {
-
+    ExtentTest test;
     @Test(enabled = false)
     public void startBrowser() {
         System.setProperty("webdriver.gecko.driver", "/Users/kentvanlim/NetBeansProjects/compass/driver/geckodriver");
@@ -42,10 +44,13 @@ public class UITest {
         }
 
         driver.manage().window().maximize();
-        driver.get("https://opensource-demo.orangehrmlive.com/");
-        Assert.assertTrue(driver.getTitle().contains("Orange"), "Title does not match");
+        driver.get("https://frontelease-colemanite-co31.antikode.dev/announcement/");
+        Assert.assertTrue(driver.getTitle().contains("Compass"), "Title Match");
         driver.quit();
+       
     }
+    @Test(enabled=true)
+    
 
    @Test(enabled=false)
     public void startBrowser2(String browserName) {
