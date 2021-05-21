@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test1(failed)" verbose="0">
     <parameter name="url" value="https://www.google.com"/>
-    <parameter name="Browser" value="/Users/kentvanlim/NetBeansProjects/compass/driver/geckodriver"/>
+    <parameter name="Browser" value="Firefox"/>
     <classes>
       <class name="mavenforjenkins.UITest">
         <methods>

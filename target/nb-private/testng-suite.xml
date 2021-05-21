@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test1">
      
-   <parameter name="Browser" value="/Users/kentvanlim/NetBeansProjects/compass/driver/geckodriver"/>
+   <parameter name="Browser" value="Firefox"/>
    <parameter name="url" value="https://www.google.com"/>
     <classes>
       <class name="mavenforjenkins.UITest"/>  

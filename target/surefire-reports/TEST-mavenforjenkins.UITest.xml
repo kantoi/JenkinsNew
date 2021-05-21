@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="mavenforjenkins.UITest" time="6.544" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="mavenforjenkins.UITest" time="0.511" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="ID"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kentvanlim/jenkinsforcompass/mavenjenkins/target/surefire/surefirebooter2864277120608329910.jar /Users/kentvanlim/jenkinsforcompass/mavenjenkins/target/surefire 2021-05-21T15-56-24_100-jvmRun1 surefire10138644654147554127tmp surefire_012852207312876659343tmp"/>
+    <property name="sun.java.command" value="/Users/kentvanlim/jenkinsforcompass/mavenjenkins/target/surefire/surefirebooter8072494293106199506.jar /Users/kentvanlim/jenkinsforcompass/mavenjenkins/target/surefire 2021-05-21T16-39-55_083-jvmRun1 surefire9210420807026451170tmp surefire_013542821492068655575tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="mavenforjenkins.UITest"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/kentvanlim/jenkinsforcompass/mavenjenkins/target/surefire/surefirebooter2864277120608329910.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kentvanlim/jenkinsforcompass/mavenjenkins/target/surefire/surefirebooter8072494293106199506.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15.0.2+7"/>
@@ -48,7 +48,6 @@
     <property name="java.version" value="15.0.2"/>
     <property name="user.dir" value="/Users/kentvanlim/jenkinsforcompass/mavenjenkins"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="webdriver.gecko.driver" value="/Users/kentvanlim/NetBeansProjects/compass/driver/geckodriver"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.library.path" value="/Users/kentvanlim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -58,22 +57,48 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="startBrowser" classname="mavenforjenkins.UITest" time="6.198">
-    <system-err><![CDATA[1621587385070	geckodriver	INFO	Listening on 127.0.0.1:47428
-1621587385211	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/yz/mh8vht6n20l542fnsjqs9h9h0000gn/T/rust_mozprofilecNHUrt"
-1621587385842	Marionette	INFO	Marionette enabled
-2021-05-21 15:56:28.779 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSButton: 0x129294800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-21 15:56:28.780 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSButton: 0x135d16000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-21 15:56:28.781 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSButton: 0x135d1b800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-21 15:56:28.781 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSButton: 0x135d15000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-21 15:56:28.782 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSButton: 0x1292f0000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-21 15:56:28.783 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x135d17000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-2021-05-21 15:56:28.783 firefox-bin[2215:65426] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1360b5c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1621587389925	Marionette	INFO	Listening on port 52117
-1621587389952	Marionette	WARN	TLS certificate errors will be ignored for this session
-May 21, 2021 3:56:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+  <testcase name="startBrowser" classname="mavenforjenkins.UITest" time="0.172">
+    <failure message="&#10;Cannot inject @Test annotated Method [startBrowser] with [class java.lang.String].&#10;For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Cannot inject @Test annotated Method [startBrowser] with [class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+]]></failure>
+    <system-err><![CDATA[[Utils] [ERROR] [Error] org.testng.TestNGException: 
+Cannot inject @Test annotated Method [startBrowser] with [class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
 ]]></system-err>
   </testcase>
 </testsuite>
