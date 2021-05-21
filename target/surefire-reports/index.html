@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="mavenforjenkins.UITest" class="method navigator-link" hash-for-method="startBrowser">startBrowser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="mavenforjenkins.UITest" class="method navigator-link" hash-for-method="startBrowser(Firefox)">startBrowser(Firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="startBrowser">
-                  </a> <!-- startBrowser -->
+                  <a name="startBrowser(Firefox)">
+                  </a> <!-- startBrowser(Firefox) -->
                   <span class="method-name">startBrowser</span>
+                  <span class="parameters">(Firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,6 +146,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;mavenforjenkins.UITest&quot;/&gt;
     &lt;/classes&gt;
@@ -190,12 +193,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'startBrowser')
 data.setCell(0, 2, 'mavenforjenkins.UITest')
-data.setCell(0, 3, 6587);
+data.setCell(0, 3, 82567);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -210,9 +213,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mavenforjenkins.UITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -223,7 +233,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">mavenforjenkins.UITest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">startBrowser</span>
+                <span class="method-name">startBrowser(Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
