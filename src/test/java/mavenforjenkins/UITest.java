@@ -28,7 +28,7 @@ public class UITest {
 	@Parameters("Browser")
 
     @Test(enabled = true)
-    public void startBrowser(String browserName) {
+    public void startCompass(String browserName) {
         System.out.println("Parameter value is " + browserName);
         WebDriver driver = null;
 
@@ -45,7 +45,11 @@ public class UITest {
 
         driver.manage().window().maximize();
         driver.get("https://frontelease-colemanite-co31.antikode.dev/announcement/");
+<<<<<<< OURS
+        Assert.assertTrue(driver.getTitle().contains("Compass"), "Title  match");
+=======
         Assert.assertTrue(driver.getTitle().contains("Compass"), "Title Match");
+>>>>>>> THEIRS
         driver.quit();
        
     }
